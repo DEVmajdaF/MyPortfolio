@@ -1,0 +1,174 @@
+/* 
+Google fonts
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;1,200&family=Poppins:wght@300;400&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ /* 
+ font-family: 'Libre Franklin', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+ */
+ /* ----------------- */
+
+
+ *{
+     margin: 0;
+     padding: 0;
+
+ }
+
+
+
+:root{
+    --helvitica:"'proxima-nova', 'Helvetica', 'Arial', 'sans-serif'";
+    --Libre : "Libre Franklin";
+    --Poppins:"Poppins";
+    --Roboto:"Roboto";
+    --primary-color: #5D5EB4;
+}
+
+ section,header a a:hover{
+     text-decoration: none;
+ }
+
+
+ 
+ .wrapper{
+     position: relative;
+ }
+/* Start Header */
+
+nav{
+    z-index: 1;
+}
+
+.bg-light{
+background-color: transparent;
+--bs-bg-opacity: 0;
+}
+.navbar-light .navbar-brand{
+    color: white;
+    font-size: 1.30rem;
+}
+.navbar-light .navbar-brand:hover{
+    color: white;
+   
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+#headerlist li a {
+    color: white;
+padding: 9px ;
+font-size: 1.15rem ;
+
+}
+#headerlist li a:hover {
+    transition: 0.3s ease-in-out;
+   color: var(--primary-color);
+}
+
+#socialicons a{
+   padding:10px;
+   color: rgb(255, 255, 255);
+}
+
+#socialicons a i{
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 0.3s;
+}
+#socialicons a i:hover{
+   color: var(--primary-color);
+}
+
+@media screen and (max-width: 991px) {
+    #socialicons a {
+      display: none;
+    }
+  }
+
+/* End  Header */
+
+/* Start Main Section */
+
+.mainsection{
+    padding: 90px 0 90px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.content{
+    animation: 1s ease-out 0s 1 blockquoteanimation;
+}
+.content div:first-child h1 {
+    animation: 1s ease-out 0s 1 blockquoteanimation2;
+color: white;
+font-size: 2.7rem;
+font-family: var(--helvitica) sans-serif;
+font-weight: 500;
+
+}
+.content div:first-child h1 span{
+
+    color: var(--primary-color);
+}
+.content div:first-child p {
+    animation: 1s ease-out 0s 1 blockquoteanimation3;
+    color: white;
+    font-size: 1.1rem;
+    font-family: var(--Libre);
+    font-weight: 200;
+    
+    }
+.content div:first-child button {
+        background-color: var(--primary-color);
+        
+        
+}
+
+.content div:last-child blockquote {
+    animation: 1s ease-out 0s 1 blockquoteanimation;
+    color: white;
+    font-size: 1.5rem;
+    border-left: 4px var(--primary-color) solid;
+    display: inline-block;
+    padding-left: 22px;
+    
+    }
+
+    @keyframes blockquoteanimation {
+        0% {
+          transform: translateX(10%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes blockquoteanimation2 {
+        0% {
+          transform: translateX(-15%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes blockquoteanimation3 {
+        0% {
+          transform: translateX(-19%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      
+/* End Main Section */
