@@ -58,18 +58,48 @@ for(var i =0; i<lis.length; i++){
 }
 
 
-//Work On portfolio project Filter 
+//Anchor Href 
 
-// for(var i =0; i<lis.length; i++){
-//     lis[i].addEventListener("click", function(){
+let headerlist = document.getElementById('headerlist').getElementsByTagName('a');
 
-// let value = $(this).attr('data-filter');
-// if(value='all'){
-//   $('.gallery-item').show();
-// }else{
-//     $('.gallery-item').not('.' +value).hide();
-//     $('.gallery-item').filter('.' +value).show();
+for(var i =0; i<lis.length; i++){
+    headerlist[i].addEventListener("click", function(e){
 
-// }
-//     })
-// };
+        if (this.href.indexOf('#') != -1) {
+            e.preventDefault();
+            $('.transition').animate({left:'100%'}, 1500)
+
+            // test(this.hash);
+            setTimeout(()=>{funct1(this.hash)},600);
+
+        }
+
+
+    });
+}
+
+
+//Close Button
+$('.close').on("click", function(){
+
+   
+    $('.transition').animate({left:'-100%'},1500)
+    setTimeout(()=>{
+        let $section = document.getElementsByTagName('section');
+        $($section).addClass('d-none');
+        $('.mainsection').addClass('d-flex').removeClass('d-none');
+        $('#navbar').show();
+        $('.close').hide();
+    },600);
+})
+
+var funct1 =function ($n){
+    let $section = document.getElementsByTagName('section');
+    $($section).addClass('d-none');
+    $($n).addClass('d-block').removeClass('d-none');
+    $('#navbar').hide();
+     $('.close').show();
+}
+
+
+
