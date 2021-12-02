@@ -18,6 +18,9 @@ font-family: 'Roboto Slab', serif;
  }
 
 
+ body{
+  counter-reset: list; 
+ }
 
 :root{
     --helvitica:"'proxima-nova', 'Helvetica', 'Arial', 'sans-serif'";
@@ -186,7 +189,7 @@ font-weight: 500;
     color: var(--primary-color);
 }
 .content div:first-child p {
-    animation: 1s ease-out 0s 1 blockquoteanimation3;
+    animation: 1s ease-out 0s 1 blockquoteanimation;
     color: white;
     font-size: 1.1rem;
     font-family: var(--Libre);
@@ -227,10 +230,10 @@ font-weight: 500;
       }
       @keyframes blockquoteanimation3 {
         0% {
-          transform: translateX(-19%);
+          transform: translateY(20%);
         }
         100% {
-          transform: translateX(0);
+          transform: translateY(0);
         }
       }
 
@@ -240,6 +243,7 @@ font-weight: 500;
 
 
 .resume-item{
+  animation: 1s ease-out 0s 1 blockquoteanimation;
   list-style: none;
   border-left: 1px var(--primary-color) solid;
   
@@ -263,9 +267,14 @@ p.resume-item-text{
   color: var(--primary-color);
   font-weight: 400;
   font-size: 1rem;
+ 
 }
+
+
+  
 .timeline-title::before{
-  content: "1";
+  content: counter(list);
+  counter-increment: list ;
   background-color: var(--primary-color);
   width: 40px;
   height: 40px;
@@ -280,6 +289,7 @@ p.resume-item-text{
 }
 .skill-bar{
   position: relative;
+  animation: 1s ease-out 0s 1 blockquoteanimation;
 }
 .skill-bar h5{
  font-size: 0.8rem;
@@ -305,22 +315,21 @@ p.resume-item-text{
 
 
 
-
-
-
-
-
-
-
-
 /* End Resume Section */
 /* Start About-Us Section */
+
+#section-about .row{
+
+  animation: 1s ease-out 0s 1 blockquoteanimation;
+}
 .title1{
   font-size: 1.2rem;
   color: var(--primary-color);
+  animation: 1s ease-out 0s 1 blockquoteanimation;
 }
 .title2{
   font-size: 2rem;
+  animation: 1s ease-out 0s 1 blockquoteanimation;
 }
 .title-underline{
  width: 90px;
@@ -329,6 +338,7 @@ p.resume-item-text{
 margin: 20px auto;
 margin-bottom: 90px;
  background-color: var(--primary-color);
+
 }
 
 
@@ -363,14 +373,17 @@ border-radius: 5px;
 }
 
 .imag-wrap div:last-child a img{
-  position: absolute;
+ 
   width: 40%;
   border-radius: 5px;
-  left: 440PX;
+  }
+  .imag-wrap div:last-child {
+    position: absolute;
+    left: 440PX;
   top: 296PX;
   }
 .s-border{
-   
+  animation: 1s ease-out 0s 1 blockquoteanimation;
     display: inline-block;
     margin-bottom: 40px;
     border-radius: 4px;
@@ -433,6 +446,7 @@ overflow: hidden;
 
 
 #portfoliofilter{
+  animation: 1s ease-out 0s 1 blockquoteanimation;
   text-align: center;
   margin-bottom: 80px;
 }
@@ -461,6 +475,7 @@ overflow: hidden;
 #gallery{
  display: flex;
  justify-content: center;
+ animation: 2s ease-out 0s 1 blockquoteanimation;
 }
 
 .gallery-item a{
@@ -516,10 +531,15 @@ textarea.form-control{
 height: 154px;
 }
 
+.contact-form{
+  animation: 1s ease-out 0s 1 blockquoteanimation;
+}
+
 .contact-form div button.btn-custom{
   background-color: var(--primary-color);
   padding: 4px 30px;
   border-radius: 2px;
+  animation: 1s ease-out 0s 1 blockquoteanimation3;
 }
 
 /* End Contact section Section */

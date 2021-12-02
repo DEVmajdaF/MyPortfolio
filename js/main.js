@@ -70,7 +70,7 @@ for(var i =0; i<lis.length; i++){
             $('.transition').animate({left:'100%'}, 1500)
 
             // test(this.hash);
-            setTimeout(()=>{funct1(this.hash)},600);
+            setTimeout(()=>{funct1(this.hash)},800);
 
         }
 
