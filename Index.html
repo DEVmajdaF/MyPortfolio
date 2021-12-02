@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Portfolio</title>
@@ -20,7 +23,7 @@
         <header>
             <!-- Start Navbar -->
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-none" id="navbar">
                 <div class="container d-flex justify-content-between align-items-center">
                     <a class="navbar-brand" href="#">Majda FANNAN</a>
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -31,19 +34,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto" id="headerlist">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Resume</a>
+                                <a class="nav-link" aria-current="page" href="#section-Resume">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Me</a>
+                                <a class="nav-link" href="#section-about">About Me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#section-portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#">Blog</a>
+                                <a class="nav-link" href="#section-Blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#">Contact</a>
+                                <a class="nav-link " href="#section-contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -63,7 +66,8 @@
         <!-- End Header -->
         <!-- Start Main -->
         <main>
-            <section class="mainsection">
+            <!-- Start Main section -->
+            <section class="mainsection dark d-none">
                 <div class="container">
                     <div class="row align-items-center content">
                         <div class="col-md-6  col-sm-12">
@@ -83,14 +87,589 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <!-- End Header -->
-    </div>
+            <!-- End Main section -->
+            <!-- Start Resume Section -->
+            <section class="dark d-none" id="section-Resume">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h4 class="title1">Im available for hire</h4>
+                            <h2 class="text-light title2">My Resume</h2>
+                            <div class="title-underline"></div>
+                        </div>
+                    </div>
 
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
+                    <div class="row">
+                        <div class="col-md-6">
 
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="text-light s-border">Education</h3>
+                                </div>
+                                <ul class=" text-light">
+                                    <li class="resume-item ">
+                                        <span class="timeline-title">Feb 2002 - Mar 2003</span>
+                                        <p class="resume-item-text ">
+
+                                            <span class="resume-item-title text-light">Master in Design<span>- New York
+                                                    University</span></span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora
+                                            perferendis vero officia enim impedit voluptatem dignissimos, veniam
+                                            ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.
+
+                                        </p>
+                                    </li>
+                                    <li class="resume-item">
+                                        <span class="timeline-title">Feb 2002 - Mar 2003</span>
+
+                                        <p class="resume-item-text ">
+                                            <span class="resume-item-title text-light">Bachelor of Arts<span>-
+                                                    University of
+                                                    London</span></span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora
+                                            perferendis vero officia enim impedit voluptatem dignissimos, veniam
+                                            ratione
+                                            est
+                                            alias rerum aperiam, nam aliquam reprehenderit iste dolor.
+                                        </p>
+                                    </li>
+                                    <li class="resume-item">
+                                        <span class="timeline-title">Feb 2002 - Mar 2003</span>
+
+                                        <p class="resume-item-text ">
+                                            <span class="resume-item-title text-light">Artist of
+                                                college<span></span></span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora
+                                            perferendis vero officia enim impedit voluptatem dignissimos, veniam
+                                            ratione
+                                            est
+                                            alias rerum aperiam, nam aliquam reprehenderit iste dolor.
+                                        </p>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="text-light s-border">Work Experience</h3>
+                                </div>
+                                <ul class="text-light">
+                                    <li class="resume-item">
+                                        <span class="timeline-title">Feb 2002 - Mar 2003</span>
+
+                                        <p class="resume-item-text">
+                                            <span class="resume-item-title text-light">Lead UI/Ux Design<span>-
+                                                    Apple</span></span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora
+                                            perferendis vero officia enim impedit voluptatem dignissimos, veniam
+                                            ratione
+                                            est
+                                            alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                                    </li>
+                                    <li class="resume-item">
+                                        <span class="timeline-title">Feb 2002 - Mar 2003</span>
+
+                                        <p class="resume-item-text">
+                                            <span class="resume-item-title text-light">Senior UI/Ux Design<span>-
+                                                    Google</span></span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora
+                                            perferendis vero officia enim impedit voluptatem dignissimos, veniam
+                                            ratione
+                                            est
+                                            alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                                    </li>
+                                    <li class="resume-item">
+                                        <span class="timeline-title">Feb 2002 - Mar 2003</span>
+
+                                        <p class="resume-item-text">
+                                            <span class="resume-item-title text-light">Junior UI/Ux Design<span>-
+                                                    Microsoft</span></span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora
+                                            perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione
+                                            est
+                                            alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-50"></div>
+                    <diqv class="row text-light">
+                        <div class="col-md-6 ">
+                            <div class="col-md-12">
+                                <h3 class="text-light s-border">Programming Skills</h3>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>HTML & CSS</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="value">
+                                        95%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>Javascript</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="value">
+                                        75%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>PHP</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="value">
+                                        85%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <h3 class="text-light s-border">Other Skills</h3>
+
+                            </div>
+
+                            <div class="skill-bar">
+                                <h5>Copywriting</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="value">
+                                        80%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>Drawing</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="value">
+                                        50%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>Singing</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="value">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+            </section>
+            <!-- End Resume section -->
+            <!-- Start About Me section -->
+            <section class=" aboutsection dark d-none" id="section-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center about-title">
+                            <h4 class="title1">Who I Am</h4>
+                            <h2 class="text-light title2">About Me</h2>
+                            <div class="title-underline"></div>
+                        </div>
+                    </div>
+                    <div class="row secndrow">
+                        <div class="col-md-7 col-sm-12">
+                            <div class="imag-wrap">
+                                <div>
+                                    <a href="">
+                                        <img src="/assets/portfolio_files/1.jpg" class="img-fluid" alt="" srcset="">
+                                    </a>
+
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="/assets/portfolio_files/2.jpg " class="" alt="" srcset="">
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 aboutme">
+                            <h1 class="text-light">Hello, I'm <span>Majda FANNAN</span></h1>
+                            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                                aliquam, quaerat veniam
+                                quas perferendis excepturi. Fugit, cumque explicabo maxime dolores deleniti delectus!
+                                Sequi soluta et architecto dolorum adipisci magnam obcaecati earum repellat ipsam
+                                deserunt! At blanditiis illum ratione quidem voluptate?</p>
+
+                            <ul>
+                                <li class="text-light "><span>Age: </span>26</li>
+                                <li class="text-light"><span>Residence: </span>Morocco</span></li>
+                                <li class="text-light "><span>Email: </span>fannanmajda@gmail.com</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="spacer-80"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-light s-border">My Services</h1>
+                        </div>
+                        <div class="col-lg-4  col-md-6  col-sx-12 f-box">
+                            <i class="fa fa-laptop id-color"></i>
+                            <div>
+                                <h4 class="text-light">Website Design</h4>
+                                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6  col-sx-12  f-box">
+                            <i class="fa fa-paper-plane id-color "></i>
+                            <div>
+                                <h4 class="text-light">Email Marketing</h4>
+                                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6  col-sx-12  f-box">
+                            <i class="fa fa-chart-line id-color"></i>
+                            <div>
+                                <h4 class="text-light">Digital Analytics</h4>
+                                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6  col-sx-12  f-box">
+                            <i class="fa fa-object-group id-color"></i>
+                            <div>
+                                <h4 class="text-light">Visual Editor</h4>
+                                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6  col-sx-12  f-box">
+                            <i class="fa fa-hdd id-color"></i>
+                            <div>
+                                <h4 class="text-light">Backup & Security</h4>
+                                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6  col-sx-12  f-box">
+                            <i class="fa fa-comments id-color"></i>
+                            <div>
+                                <h4 class="text-light">IT Consultancy</h4>
+                                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="spacer-80"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class=" text-light s-border">Testimonials</h1>
+                        </div>
+                        <div class="owl-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="owl-item">
+                                        <blockquote class="quotes text-light">
+
+                                            I'm always impressed with the services. Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud exercitation ullamco laboris nisi ut aliquip.
+
+                                            <img src="/assets/portfolio_files/1.jpg" alt="FirstImage"
+                                                class="carousel-img" srcset="">
+                                            <span class="name">Majda FANNAN</span>
+
+                                        </blockquote>
+                                    </div>
+                                    <div class="owl-item ">
+                                        <blockquote class="quotes text-light">
+
+                                            I'm always impressed with the services. Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud exercitation ullamco laboris nisi ut aliquip.
+
+                                            <img src="/assets/portfolio_files/4.jpg" alt="SecondImage"
+                                                class="carousel-img" srcset="">
+                                            <span class="name">Majda FANNAN</span>
+
+                                        </blockquote>
+                                    </div>
+                                    <div class="owl-item">
+                                        <blockquote class="quotes text-light">
+
+                                            I'm always impressed with the services. Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud exercitation ullamco laboris nisi ut aliquip.
+
+                                            <img src="/assets/portfolio_files/3.jpg" alt="ThirdImage"
+                                                class="carousel-img" srcset="">
+                                            <span class="name">Majda FANNAN</span>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+            </section>
+            <!-- End About Me section -->
+            <!-- Start Portfolio Section -->
+            <section id="section-portfolio " class="dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h4 class=" title1">Showcase of my bes works</h4>
+                            <h2 class="text-light title2">My Portfolio</h2>
+                            <div class="title-underline"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <ul id="portfoliofilter">
+                                <li>
+                                    <a class="selected" data-filter="*" href="#">All Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-filter=".illustration">illustration</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" data-filter=".mobile">mobile</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" data-filter=".photography">photography</a>
+                                </li>
+                                <li class="">
+                                    <a data-filter=".website" href="#">website</a>
+                                </li>
+                            </ul>
+
+                            <div class="row" id="gallery">
+                                <div class="col-md-4 col-sm-6 illustration gallery-item">
+                                    <a href="#">
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/6.jpg" alt="">
+                                    </a>
+
+
+                                </div>
+                                <div class="col-md-4 col-sm-6 mobile gallery-item ">
+                                    <a href="#">
+
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/6(1).jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 photography gallery-item">
+                                    <a href="#">
+
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 photography gallery-item">
+                                    <a href="#">
+
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/6(1).jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 mobile gallery-item">
+                                    <a href="#">
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 illustration gallery-item">
+                                    <a href="#">
+
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/4(1).jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 illustration gallery-item">
+                                    <a href="#">
+
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/4(1).jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 illustration gallery-item">
+                                    <a href="#">
+
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/4(1).jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 website gallery-item">
+                                    <a href="#">
+
+                                        <div class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h4 class="title">Creative Design</h4>
+                                            <span class="sub-title">Photography</span>
+                                        </div>
+                                        <img src="/assets/portfolio_files/4(1).jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- End Portfolio section -->
+            <!-- Start contact-us Section -->
+            <section id="section-contact" class="dark d-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h4 class=" title1">I'm available for hire</h4>
+                            <h2 class="text-light title2">Contact Me</h2>
+                            <div class="title-underline"></div>
+                        </div>
+                    </div>
+
+
+                    <form action="" class="row contact-form">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-item">
+                                <input class="form-control" placeholder="Your Name" type="text">
+                                <span></span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="Your Email">
+                                <span></span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="Your Phone">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-item">
+                                <textarea class="form-control" placeholder="your Message" rows="4"></textarea>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="spacer-50">
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button class=" btn btn-custom text-light">Send</button>
+                        </div>
+                    </form>
+
+
+
+
+                </div>
+
+            </section>
+            <!-- End contact-us Section -->
+
+
+</body>
+
+</html>
+
+</main>
+<!-- End Main -->
+
+
+</div>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script>
+    // // document.getElementById("").addEventListener("click", function () {
+    // //     alert("Hello World!");
+    // // });
+
+    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //     anchor.addEventListener('click', function (e) {
+    //         // e.preventDefault();
+    //         document.getElementById("navbar").classList.add("d-none");
+    //         document.getElementById("section-main").classList.remove("d-flex");
+    //         document.getElementById("section-main").classList.add("d-none");
+
+    //         document.getElementById("section-about").classList.remove("d-none");
+    //         document.getElementById("section-about").classList.add("d-flex");
+
+    //         // document.querySelector(this.getAttribute('href')).scrollIntoView({
+    //         //     behavior: 'smooth'
+    //         // });
+    //     });
+    // });
+</script>
 </body>
 
 </html>
