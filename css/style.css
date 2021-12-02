@@ -17,11 +17,6 @@ font-family: 'Roboto Slab', serif;
 
  }
 
-
- body{
-  counter-reset: list; 
- }
-
 :root{
     --helvitica:"'proxima-nova', 'Helvetica', 'Arial', 'sans-serif'";
     --Libre : "Libre Franklin";
@@ -241,11 +236,14 @@ font-weight: 500;
 /* End Main Section */
 /* start Resume Section */
 
-
+ul{
+  counter-reset: list; 
+}
 .resume-item{
   animation: 1s ease-out 0s 1 blockquoteanimation;
   list-style: none;
   border-left: 1px var(--primary-color) solid;
+  
   
 
 }
